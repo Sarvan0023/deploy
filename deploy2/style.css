@@ -1,0 +1,137 @@
+@import 'sass';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 30px;
+    
+}
+
+/* Navbar */
+.navbar {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    float: right;
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+      }
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 12px;
+}
+
+.cart-btn {
+    background-color: #f8f9fa;
+    border: 1px solid #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    @media (max-width: 768px) {
+        font-size: 2em;
+      }
+}
+
+.hero-section p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+/* Product Section */
+.product-section {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    margin-top: 20px;
+    
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 15px;
+      }
+}
+
+.product-card {
+    background-color: white;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+.btn{
+    margin-top: 40px;
+    padding: 10px;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.product-card h3 {
+    margin-top: 15px;
+}
+
+.sale {
+    text-decoration: line-through;
+    color: red;
+}
+.footer{
+    height: 175px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+@media (max-width: 1200px) {
+    .container {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      width: 95%;
+    }
+  }
